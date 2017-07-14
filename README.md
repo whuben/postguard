@@ -1,12 +1,4 @@
----
-title:  "PostGuard: A lua module demo for protecting post request"
-date:   2017-07-02 15:00:00
-categories: [Code]
-tags: [lua]
----
-
-### The idea of [PostGuard](https://github.com/whuben/postguard)
-
+### The idea of PostGuard
 #### 0x01 Does every post request has a "referer" in the header?
 
 The idea is based on the assumption that every post request must bring with a "referer". Actually, most post request will bring with a "referer" which is accessed before submitting the post request. According to my consideration, there are two situation 
