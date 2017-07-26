@@ -42,7 +42,7 @@ end
 
 --fetch the uri from a given referer
 local function get_uri_by_referer(referer)
-    local m,err = ngx_re_match(referer,[=[https?://[a-z0-9\-.]+(/[^?]*)]=],"jio")
+    local m,err = ngx_re_match(referer,[=[https?://[^/]+(/?[^?]*)]=],"jio")
     if m then
         return m[1]
     else
